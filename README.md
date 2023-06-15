@@ -25,3 +25,16 @@ You are tasked with analyzing the situation and determining which network protoc
 ## Review of Log File
 ![](log.JPG)
 
+**__Note__**: The log file is showing 3 attempts made to access the server.
+
+First attempt record:
+- The record, 13:24:32.192571 displays the time 1:24 p.m. and 32.192571 seconds. This is showing when the event happened. 
+- Nest is the source and destination IP address. In the error log, this information is displayed as: 192.51.100.15.52444 > 203.0.113.2.domain. The source IP address is 192.51.100.15.52444 and the destination IP address is 203.0.113.2.domain. 
+- The second and third lines of the log show the response to the initial ICMP request packet. In this case, the ICMP 203.0.113.2 line is the start of the error message indicating that the ICMP packet was undeliverable to the port of the DNS server.
+- Next are the protocol and port number, which displays which protocol was used to handle communications and which port it was delivered to. In the error log, this appears as: udp port 53 unreachable. This means that the UDP protocol was used to request a domain name resolution using the address of the DNS server over port 53. Port 53, which aligns to the .domain extension in 203.0.113.2.domain, is a well-known port for DNS service. The word “unreachable” in the message indicates the message did not go through to the DNS server. The source computer's browser was not able to obtain the IP address for yummyrecipesforme.com, which it needs to access the website because no service was listening on the receiving DNS port as indicated by the ICMP error message “udp port 53 unreachable.”
+
+Similar information is displayed in the subsequent records.
+
+
+
+
