@@ -38,6 +38,10 @@ Similar information is displayed in the subsequent records.
 Below is a summary of the problem identified from the log analysis.
 ![](ProblemSummary.JPG)
 
-Here is a 
+Here is an explanation to the possible causes of the incidents.
+![](Explanation.JPG)
 
+## Conclusion
+The DNS Port 53 Unreachable Analysis project has successfully investigated the issue of "UDP port 53 unreachable" error encountered during the access of a website. Through careful examination of DNS and ICMP traffic logs, as well as the use of network analyzer tools, the project has achieved its objectives of identifying the affected network protocol and determining the some possible causes of the DNS server unavailability.
+The comprehensive documentation created as part of this project will serve as a valuable resource for IT professionals and network administrators facing similar issues. Read the report of the analysis here 👉 []()
 
