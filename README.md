@@ -35,6 +35,9 @@ First attempt record:
 
 Similar information is displayed in the subsequent records.
 
+Below is a summary of the problem identified from the log analysis.
+![](ProblemSummary.JPG)
 
+Here is a 
 
 
